@@ -36,7 +36,7 @@ function Home() {
   const getPlaces = async (code) => {
     try {
       const res = await axios.get(
-        `http://localhost:3000/tour?areaCode=${code}`
+        `https://travel-planner-srh3.onrender.com/tour?areaCode=${code}`
       );
 
       setPlaces(res.data.response.body.items.item);
