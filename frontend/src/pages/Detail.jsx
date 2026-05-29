@@ -44,7 +44,7 @@ function Detail() {
         target="_blank"
         className="bg-green-500 text-white px-4 py-2 rounded"
       >
-        네이버 지도 보기
+        네이버 지도로 보기
       </a>
     </div>
   );

@@ -113,14 +113,14 @@ function Home() {
         />
 
         <h2 className="font-semibold">
-          ❤️ 찜 개수 : {favorites.length}
+          ♥ 찜 수 : {favorites.length}
         </h2>
 
         <Link
           to="/favorites"
-          className="bg-blue-500 text-white px-4 py-2 rounded"
+          className="bg-green-500 text-white px-4 py-2 rounded"
         >
-          찜 목록 보기
+          찜 목록
         </Link>
       </div>
 
@@ -167,8 +167,8 @@ function Home() {
                   className="bg-pink-500 text-white px-4 py-2 rounded"
                 >
                   {isFavorite(place.contentid)
-                    ? "❤️ 찜됨"
-                    : "🤍 찜하기"}
+                    ? "❤️ 찜"
+                    : "🤍 찜"}
                 </button>
               </div>
             </div>

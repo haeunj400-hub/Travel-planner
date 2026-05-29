@@ -25,11 +25,11 @@ function Favorites() {
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
       <h1 className="text-4xl font-bold mb-6">
-        ❤️ 찜 목록
+        ♥ 찜 목록
       </h1>
 
       {favorites.length === 0 && (
-        <h2>찜한 관광지가 없습니다.</h2>
+        <h2> 찜한 관광지가 없습니다.</h2>
       )}
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
