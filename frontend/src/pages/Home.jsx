@@ -81,7 +81,7 @@ function Home() {
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
       <h1 className="text-4xl font-bold mb-6">
-        국내 여행지 소개
+        국내 관광지 소개
       </h1>
 
       <div className="flex gap-4 items-center mb-6 flex-wrap">
@@ -111,10 +111,6 @@ function Home() {
           }
           className="border p-2 rounded"
         />
-
-        <h2 className="font-semibold">
-          ♥ 찜 수 : {favorites.length}
-        </h2>
 
         <Link
           to="/favorites"

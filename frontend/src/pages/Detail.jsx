@@ -33,12 +33,6 @@ function Detail() {
         전화번호 : {place.tel || "없음"}
       </p>
 
-      <p className="mb-6">
-        좌표 :
-        {place.mapy},
-        {place.mapx}
-      </p>
-
       <a
         href={`https://map.naver.com/v5/search/${place.title}`}
         target="_blank"
