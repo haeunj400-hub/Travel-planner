@@ -81,7 +81,7 @@ function Home() {
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
       <h1 className="text-4xl font-bold mb-6">
-        국내 여행 플래너
+        국내 여행지 소개
       </h1>
 
       <div className="flex gap-4 items-center mb-6 flex-wrap">
@@ -118,7 +118,7 @@ function Home() {
 
         <Link
           to="/favorites"
-          className="bg-green-500 text-white px-4 py-2 rounded"
+          className="bg-red-500 text-white px-4 py-2 rounded"
         >
           찜 목록
         </Link>
@@ -136,7 +136,7 @@ function Home() {
           .map((place) => (
             <div
               key={place.contentid}
-              className="bg-white rounded-xl shadow-md overflow-hidden"
+              className="relative bg-white rounded-xl shadow-md overflow-hidden"
             >
               <Link
                 to={`/detail/${place.contentid}`}
@@ -164,11 +164,11 @@ function Home() {
                   onClick={() =>
                     toggleFavorite(place)
                   }
-                  className="bg-pink-500 text-white px-4 py-2 rounded"
+                  className="absolute top-3 right-3 text-3xl"
                 >
                   {isFavorite(place.contentid)
-                    ? "❤️ 찜"
-                    : "🤍 찜"}
+                    ? "❤️ " 
+                    : "🤍 "}
                 </button>
               </div>
             </div>
